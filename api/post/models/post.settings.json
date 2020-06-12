@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "name": "post"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "published": {
+      "type": "datetime"
+    },
+    "transPosts": {
+      "collection": "trans-post",
+      "via": "post"
+    },
+    "author": {
+      "model": "author",
+      "via": "posts"
+    }
+  }
+}

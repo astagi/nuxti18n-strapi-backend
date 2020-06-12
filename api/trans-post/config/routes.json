@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/trans-posts",
+      "handler": "trans-post.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/trans-posts/count",
+      "handler": "trans-post.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/trans-posts/:id",
+      "handler": "trans-post.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/trans-posts",
+      "handler": "trans-post.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/trans-posts/:id",
+      "handler": "trans-post.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/trans-posts/:id",
+      "handler": "trans-post.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

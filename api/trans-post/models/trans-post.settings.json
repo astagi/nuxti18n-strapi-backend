@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trans_posts",
+  "info": {
+    "name": "trans_post"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "lang": {
+      "type": "enumeration",
+      "enum": [
+        "en",
+        "de",
+        "fr",
+        "it",
+        "es"
+      ],
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "post": {
+      "via": "transPosts",
+      "model": "post"
+    }
+  }
+}
