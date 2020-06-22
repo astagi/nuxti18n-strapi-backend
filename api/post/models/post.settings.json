@@ -13,8 +13,8 @@
       "type": "datetime"
     },
     "transPosts": {
-      "collection": "trans-post",
-      "via": "post"
+      "via": "post",
+      "collection": "trans-post"
     },
     "author": {
       "model": "author",

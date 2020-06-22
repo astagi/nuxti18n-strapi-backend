@@ -31,8 +31,22 @@
       "targetField": "title"
     },
     "post": {
-      "via": "transPosts",
-      "model": "post"
+      "model": "post",
+      "via": "transPosts"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "cover": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
